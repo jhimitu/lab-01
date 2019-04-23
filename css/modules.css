@@ -33,3 +33,41 @@ aside {
 footer {
   background-color: pink;
 }
+
+@media only screen and (max-width: 768px) {
+  header {
+    background-color: rgb(245, 176, 151);
+  }
+  
+  aside {
+    background-color: rgb(252, 154, 206);
+  }
+  
+  #c {
+    background-color: rgb(182, 136, 225);
+  }
+  
+  #d {
+    background-color: rgb(167, 255, 255);
+  }
+  
+  #e {
+    background-color: rgb(238, 238, 149);
+  }
+  
+  #f {
+    background-color: rgb(136, 154, 187);
+  }
+  
+  #g {
+    background-color: rgb(160, 220, 151);
+  }
+  
+  #h {
+    background-color: rgb(222, 153, 124);
+  }
+  
+  footer {
+    background-color: rgb(228, 197, 202);
+  }
+}

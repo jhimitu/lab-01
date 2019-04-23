@@ -54,3 +54,46 @@ footer {
 footer p {
   padding-top: 70px;
 }
+
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 480px;
+  }
+  aside {
+    height: 150px;
+    width: 480px;
+    float: none;
+  }
+
+  aside p {
+    padding-top: 70px;
+  }
+
+  .inner-main {
+    float: none;
+  }
+
+  .two-col section {
+    height: 125px;
+    width: 480px;
+    float: none;
+  }
+
+  .two-col p {
+    padding-top: 60px;
+  }
+
+  .four-col section {
+    width: 240px;
+  }
+
+  footer {
+    height: 80px;
+    width: 480px;
+  }
+
+  footer p {
+    padding-top: 35px;
+  }
+}
