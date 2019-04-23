@@ -1,0 +1,35 @@
+header {
+  background-color: coral;
+}
+
+aside {
+  background-color: deeppink;
+}
+
+#c {
+  background-color: blueviolet;
+}
+
+#d {
+  background-color: cyan;
+}
+
+#e {
+  background-color: yellow;
+}
+
+#f {
+  background-color: cornflowerblue;
+}
+
+#g {
+  background-color: rgb(77, 210, 56);
+}
+
+#h {
+  background-color: rgb(255, 77, 0);
+}
+
+footer {
+  background-color: pink;
+}
