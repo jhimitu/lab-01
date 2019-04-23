@@ -1,6 +1,5 @@
 header {
   height: 100px;
-  background-color: coral;
 }
 
 header h1 {
@@ -10,7 +9,6 @@ header h1 {
 aside {
   height: 600px;
   width: 200px;
-  background-color: deeppink;
   float: left;
 }
 
@@ -36,47 +34,21 @@ aside p {
   padding-top: 95px;
 }
 
-#c {
-  background-color: blueviolet;
-}
-
-#d {
-  background-color: cyan;
-}
-
 .four-col section {
   height: 250px;
   width: 190px;
   margin: 0;
   float: left;
-  background-color: coral;
 }
 
 .four-col p {
   padding-top: 120px
 }
 
-#e {
-  background-color: yellow;
-}
-
-#f {
-  background-color: cornflowerblue;
-}
-
-#g {
-  background-color: rgb(77, 210, 56);
-}
-
-#h {
-  background-color: rgb(255, 77, 0);
-}
-
 footer {
   height: 150px;
   width: 760px;
   float: right;
-  background-color: pink;
 }
 
 footer p {
