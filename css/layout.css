@@ -30,8 +30,6 @@ aside p {
   height: 200px;
   width: 380px;
   float: left;
-  display: inline-block;
-  background-color: cyan;
 }
 
 .two-col p {
@@ -40,6 +38,10 @@ aside p {
 
 #c {
   background-color: blueviolet;
+}
+
+#d {
+  background-color: cyan;
 }
 
 .four-col section {
