@@ -1,0 +1,82 @@
+header {
+  height: 100px;
+  background-color: coral;
+}
+
+header h1 {
+  padding-top: 45px;
+}
+
+aside {
+  height: 600px;
+  width: 200px;
+  background-color: deeppink;
+  float: left;
+}
+
+aside p {
+  padding-top: 295px;
+}
+
+.inner-main {
+  float: right;
+}
+
+.two-col {
+  width: 760px;
+}
+
+.two-col section {
+  height: 200px;
+  width: 380px;
+  float: left;
+  display: inline-block;
+  background-color: cyan;
+}
+
+.two-col p {
+  padding-top: 95px;
+}
+
+#c {
+  background-color: blueviolet;
+}
+
+.four-col section {
+  height: 250px;
+  width: 190px;
+  margin: 0;
+  float: left;
+  background-color: coral;
+}
+
+.four-col p {
+  padding-top: 120px
+}
+
+#e {
+  background-color: yellow;
+}
+
+#f {
+  background-color: cornflowerblue;
+}
+
+#g {
+  background-color: rgb(77, 210, 56);
+}
+
+#h {
+  background-color: rgb(255, 77, 0);
+}
+
+footer {
+  height: 150px;
+  width: 760px;
+  float: right;
+  background-color: pink;
+}
+
+footer p {
+  padding-top: 70px;
+}
