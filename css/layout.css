@@ -1,4 +1,17 @@
+#container {
+  display: grid;
+  max-width: 960px;
+  margin: 0 auto;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas:
+  "header header header header header"
+  "aside inner-main inner-main inner-main inner-main"
+  "aside inner-main inner-main inner-main inner-main"
+  "aside footer footer footer footer";
+}
+
 header {
+  grid-area: header;
   height: 100px;
 }
 
@@ -7,48 +20,65 @@ header h1 {
 }
 
 aside {
+  grid-area: aside;
   height: 600px;
   width: 200px;
-  float: left;
-}
-
-aside p {
-  padding-top: 295px;
 }
 
 .inner-main {
-  float: right;
+  grid-area: inner-main;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "two-col-a two-col-a two-col-b two-col-b"
+  "four-col-a four-col-b four-col-c four-col-d";
+  height: 450px;
 }
 
-.two-col {
-  width: 760px;
-}
-
-.two-col section {
+#c {
+  grid-area: two-col-a;
   height: 200px;
   width: 380px;
-  float: left;
+
 }
 
-.two-col p {
-  padding-top: 95px;
+#d {
+  grid-area: two-col-b;
+  height: 200px;
+  width: 380px;
+
 }
 
-.four-col section {
-  height: 250px;
+#e {
+  grid-area: four-col-a;
   width: 190px;
-  margin: 0;
-  float: left;
+  height: 250px;
 }
 
-.four-col p {
-  padding-top: 120px
+#f {
+  grid-area: four-col-b;
+  width: 190px;
+  height: 250px;
 }
+
+#g {
+  grid-area: four-col-c;
+  width: 190px;
+  height: 250px;
+}
+
+#h {
+  grid-area: four-col-d;
+  width: 190px;
+  height: 250px;
+}
+
 
 footer {
+  grid-area: footer;
   height: 150px;
   width: 760px;
-  float: right;
+
 }
 
 footer p {
@@ -57,43 +87,55 @@ footer p {
 
 
 @media only screen and (max-width: 768px) {
-  body {
-    width: 480px;
+  #container {
+    display: grid;
+    max-width: 480px;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "header header"
+    "aside aside"
+    "inner-main inner-main"
+    "inner-main inner-main"
+    "inner-main inner-main"
+    "inner-main inner-main"
+    "footer footer";
   }
+
+  header {
+    height: 75px;
+  }
+
   aside {
     height: 150px;
     width: 480px;
-    float: none;
-  }
 
-  aside p {
-    padding-top: 70px;
   }
 
   .inner-main {
-    float: none;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-areas:
+    "two-col-a two-col-a"
+    "two-col-b two-col-b"
+    "four-col-a four-col-b"
+    "four-col-c four-col-d";
+    width: 480px;
   }
 
-  .two-col section {
+  #c, #d {
     height: 125px;
     width: 480px;
-    float: none;
   }
 
-  .two-col p {
-    padding-top: 60px;
-  }
-
-  .four-col section {
+  #e, #f, #g, #h {
+    height: 250px;
     width: 240px;
   }
 
   footer {
+    grid-area: footer;
     height: 80px;
     width: 480px;
-  }
-
-  footer p {
-    padding-top: 35px;
   }
 }
