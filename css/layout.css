@@ -25,10 +25,6 @@ aside {
   width: 200px;
 }
 
-aside p {
-  padding-top: 295px;
-}
-
 .inner-main {
   grid-area: inner-main;
   display: grid;
@@ -91,10 +87,25 @@ footer p {
 
 
 @media only screen and (max-width: 768px) {
-  body {
-    width: 480px;
+  #container {
+    display: grid;
+    max-width: 480px;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "header header"
+    "aside aside"
+    "inner-main inner-main"
+    "inner-main inner-main"
+    "inner-main inner-main"
+    "inner-main inner-main"
+    "footer footer";
   }
-  
+
+  header {
+    height: 75px;
+  }
+
   aside {
     height: 150px;
     width: 480px;
@@ -102,11 +113,28 @@ footer p {
   }
 
   .inner-main {
-
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-areas:
+    "two-col-a two-col-a"
+    "two-col-b two-col-b"
+    "four-col-a four-col-b"
+    "four-col-c four-col-d";
+    width: 480px;
   }
 
+  #c, #d {
+    height: 125px;
+    width: 480px;
+  }
+
+  #e, #f, #g, #h {
+    height: 250px;
+    width: 240px;
+  }
 
   footer {
+    grid-area: footer;
     height: 80px;
     width: 480px;
   }
